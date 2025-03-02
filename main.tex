@@ -1,16 +1,14 @@
 \documentclass{hitec}  % Your existing document class
-\usepackage{lipsum}    % For dummy text
-\usepackage{graphicx}  % Basic image inclusion
+\usepackage{graphicx}  % For including images
+\usepackage{lipsum}    % Dummy text
+\usepackage{tikz}      % For mindmaps
+\usetikzlibrary{mindmap, shadows}
 
-% FOR MINDMAPS
-\usepackage{tikz}
-\usetikzlibrary{mindmap, shadows} % Adds mindmap functionality, plus optional shadows
-
-% OPTIONAL: EXTRA IMAGE CONTROL
-\usepackage{wrapfig}    % Wrap text around figures
-\usepackage{caption}    % Customize figure captions
-\usepackage{subcaption} % Sub-figures with separate captions
-\usepackage{float}      % More control over float placements
+% OPTIONAL: Extra image control
+\usepackage{wrapfig}    
+\usepackage{caption}    
+\usepackage{subcaption} 
+\usepackage{float}      
 
 %%%%% Indent the subsections
 \makeatletter
@@ -28,7 +26,7 @@
 \begin{document}
 \maketitle
 
-% Example: Mindmap
+% Example Mindmap (can be moved to any relevant section)
 \begin{tikzpicture}
   \path[mindmap, concept color=blue!30, text=white]
     node[concept] {NIST Guidelines}
@@ -39,13 +37,37 @@
     child { node[concept] {Compliance} };
 \end{tikzpicture}
 
-% Example: Inserting a figure with subfigures/wrap
-\begin{wrapfigure}{r}{0.45\textwidth}
-    \centering
-    \includegraphics[width=0.4\textwidth]{example-image}
-    \caption{Wrapped example image}
-\end{wrapfigure}
+%------------------------
+\section{Executive Summary}
+\input{sections/01_executive_summary_en.tex}
+\input{sections/01_executive_summary_no.tex}
 
-\lipsum[1-2] % Dummy text to show wrapfigure usage
+%------------------------
+\section{Introduction}
+\input{sections/02_introduction_en.tex}
+\input{sections/02_introduction_no.tex}
+
+%------------------------
+\section{Main Discussion}
+\input{sections/03_main_discussion_en.tex}
+\input{sections/03_main_discussion_no.tex}
+
+% Insert the image in the Main Discussion section
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.33\textwidth]{images/REF_Pyramid_nb.png}
+    \caption{Reference Pyramid}
+    \label{fig:ref_pyramid}
+\end{figure}
+
+%------------------------
+\section{Scenario Development}
+\input{sections/04_scenario_development_en.tex}
+\input{sections/04_scenario_development_no.tex}
+
+%------------------------
+\section{Technical Discussion}
+\input{sections/05_technical_discussion_en.tex}
+\input{sections/05_technical_discussion_no.tex}
 
 \end{document}
