@@ -1,1 +1,4 @@
 # Placeholder for 01_executive_summary_no.md section
+National Institute of Standards and Technology (NIST) gir omfattende veiledning til organisasjoner som ønsker å etablere solide sikkerhets- og personverntiltak. Spesielt beskriver NISTs spesialpublikasjoner (som SP 800-53) et rammeverk av sikkerhetskontroller som kan tilpasses ulike størrelser, bransjer og risikoprofiler. Ved å følge disse anbefalingene kan organisasjoner redusere sårbarheter, oppfylle regulatoriske krav og styrke den overordnede motstandsdyktigheten mot cyberangrep.
+
+I tillegg legger NIST stor vekt på en livssyklusbasert tilnærming for risikostyring, med kontinuerlig vurdering og overvåking. Dette sikrer at retningslinjer og rutiner forblir oppdaterte i møte med nye trusler og teknologiske fremskritt. Gjennom å innføre disse prinsippene kan virksomheter skape en sikkerhetskultur som aktivt håndterer risiko, beskytter kritiske verdier og støtter forretningsmålene.
